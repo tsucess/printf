@@ -15,7 +15,11 @@ int _printf(const char *format, ...)
 
 	for (a = 0; format[a] != '\0'; a++)
 	{
-		if (format[a] != '%')
+		if (format == NULL)
+		{
+			return (-1);
+		}
+		else if (format[a] != '%')
 		{
 			_putchar(format[a]);
 		}
