@@ -11,7 +11,7 @@ int _putstr(char *str)
 
 	if (str)
 	{
-		for (i = 0; str[i] != '0'; i++)
+		for (i = 0; str[i] != '\0'; i++)
 		{
 			_putchar(str[i]);
 			r_value++;
