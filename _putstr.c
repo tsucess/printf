@@ -9,13 +9,15 @@ int _putstr(char *str)
 {
 	int i, r_value = 0;
 
-	if (str)
+	if (str == NULL)
 	{
-		for (i = 0; str[i] != '\0'; i++)
-		{
-			_putchar(str[i]);
-			r_value++;
-		}
+		write(1, "NULL", 1);
+		return (-1);
+	}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+		r_value++;
 	}
 	return (r_value);
 }
