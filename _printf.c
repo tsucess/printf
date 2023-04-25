@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _printf - function that replicate the printf function
  * @format: format parameter
