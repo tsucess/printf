@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 		}
 		else if (format[a + 1] == 'c')
 		{
-			_putchar(va_arg(vargs, char));
+			_putchar(va_arg(vargs, int));
 			a++;
 		}
 		else if (format[a + 1] == 's')
@@ -30,6 +30,7 @@ int _printf(const char *format, ...)
 			a++;
 			r_val += (r_int - 1);
 		}
-		r_val++;
+	r_val++;
 	}
+	return (r_val);
 }

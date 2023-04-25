@@ -7,7 +7,7 @@
  */
 int _putstr(char *str)
 {
-	int i r_value = 0;
+	int i, r_value = 0;
 
 	if (str)
 	{

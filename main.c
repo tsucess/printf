@@ -17,5 +17,7 @@ int main(void)
 	len2 = printf("Let's try to printf a simple sentence.\n");
 	ui = (unsigned int)INT_MAX + 1024;
 	addr = (void *)0x7ffe637541f0;
+	printf("LEN: %i, %d\n", len, len);
+	printf("LEN2: %i, %d\n", len2, len2);
 	return (0);
 }
