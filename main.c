@@ -19,5 +19,11 @@ int main(void)
 	addr = (void *)0x7ffe637541f0;
 	printf("LEN: %i, %d\n", len, len);
 	printf("LEN2: %i, %d\n", len2, len2);
+	_printf("Character:[%c]\n", 'H');
+	printf("Character:[%c]\n", 'H');
+
+	printf("***************************************\n\n");
+	printf("String:[%s]\n\n", "I am a string !");
+	_printf("String:[%s]\n", "I am a string !");
 	return (0);
 }

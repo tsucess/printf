@@ -27,10 +27,12 @@ int _printf(const char *format, ...)
 		else if (format[a + 1] == 's')
 		{
 			int r_int = _putstr(va_arg(vargs, char *));
+
 			a++;
 			r_val += (r_int - 1);
 		}
 	r_val++;
 	}
+	va_end(vargs);
 	return (r_val);
 }
