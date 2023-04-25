@@ -17,6 +17,9 @@
 /* SIZES */
 #define S_LONG 2
 #define S_SHORT 1
+int _putchar(char c);
+int _printf(const char *format, ...);
+int _putstr(char *str);
 
 /**
  * struct fmt - Struct op
@@ -29,4 +32,4 @@ struct fmt
 	char fmt;
 	int (*fn)(va_list, char[], int, int, int, int);
 };
-
+#endif 
