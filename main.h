@@ -18,9 +18,6 @@
 #define S_LONG 2
 #define S_SHORT 1
 
-/**
- * PROTOTYPES
- */
 int _putchar(char c);
 int _printf(const char *format, ...);
 int _putstr(char *str);
