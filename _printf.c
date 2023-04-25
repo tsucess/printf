@@ -1,6 +1,5 @@
 #include "main.h"
-#include "_putstr.c"
-#include "_putchar.c"
+
 /**
  * _printf - function that replicate the printf function
  * @format: format parameter
