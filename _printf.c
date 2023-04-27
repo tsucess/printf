@@ -35,10 +35,10 @@ int _printf(const char *format, ...)
 			a++;
 			r_val += (r_int - 1);
 		}
-		else if (format[a + a] == '%')
+		else if (format[a + 1] == '%')
 		{
 			_putchar('%');
-			h++;
+			a++;
 		}
 	r_val++;
 	}
