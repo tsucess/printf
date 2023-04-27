@@ -35,6 +35,11 @@ int _printf(const char *format, ...)
 			a++;
 			r_val += (r_int - 1);
 		}
+		else if (format[a + a] == '%')
+		{
+			_putchar('%');
+			h++;
+		}
 	r_val++;
 	}
 	va_end(vargs);

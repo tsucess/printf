@@ -21,6 +21,7 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int _putstr(char *str);
+int _putint(int i);
 
 /**
  * struct fmt - Struct op
